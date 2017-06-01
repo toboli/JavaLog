@@ -11,16 +11,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int num1 = 10 + 5 - 2 * 4 / 2;
-        Log.d("javatest", "10 + 5 - 2 * 4 / 2 = " + String.valueOf(num1));
+        Dog dog = new Dog("ポチ", 3);     // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
 
-        boolean flag1 = true;
-        boolean flag2 = false;
-        Log.d("javatest", "flag1 && flag2 = " + String.valueOf(flag1 && flag2));
-        Log.d("javatest", "flag1 || flag2 = " + String.valueOf(flag1 || flag2));
+        dog.move();
 
-        int num2 = 10;
-        int num3 = 20;
-        Log.d("javatest", "num2 < num3 = " + String.valueOf(num2 < num3));
+        Human human=new Human("まーちゃん",20,"さんぽ");
+        human.say();
+        human.think();
+
+
     }
+
+
 }
